@@ -85,16 +85,19 @@ main {
     padding: 20px;
     width: 100%;
     margin-bottom: 10px;
+    background-color: #3355FF;
 }
 
 .card h2 {
     margin-bottom: 10px;
+    color: #fff
 }
 
 .card ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    color: #fff
 }
 
 footer {
