@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: "Sansita", sans-serif;
+    font-family: Tahoma, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -23,7 +23,7 @@ header span {
 header {
     text-align: center;
     margin-bottom: 20px;
-    background-color: #bbb;
+    background-color: #A64253;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,7 +40,7 @@ h1 {
 
 nav {
     margin-bottom: 20px;
-    background-color: #36454f;
+    background-color: #011936;
     margin: 0 auto;
     max-width: 800px;
 }
@@ -85,7 +85,7 @@ main {
     padding: 20px;
     width: 100%;
     margin-bottom: 10px;
-    background-color: #3355FF;
+    background-color: #C6AC8F;
 }
 
 .card h2 {
@@ -100,25 +100,12 @@ main {
     color: #fff
 }
 
-.card a {
-    display: block;
-    padding: 1px;
-    color: #fff;
-    text-align: right;
-    text-decoration: none;
-}
-
-.card a:hover {
-    text-decoration: underline;
-    color: yellowgreen;
-}
-
 footer {
     position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
-    background: #36454f;
+    background: #011936;
     min-height: 100px;
     padding: 20px 50px;
     display: flex;
