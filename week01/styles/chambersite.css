@@ -5,7 +5,6 @@
 }
 
 body {
-    font-family: Tahoma, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -21,9 +20,10 @@ header span {
 }
 
 header {
+    font-family: Tahoma, sans-serif;
     text-align: center;
     margin-bottom: 20px;
-    background-color: #A64253;
+    background-color: #B07156;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,29 +31,12 @@ header {
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-
-h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    grid-column: span 2;
-}
-
 nav {
     margin-bottom: 20px;
-    background-color: #011936;
+    background-color: #9932CC;
     margin: 0 auto;
     max-width: 800px;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
-nav li {
-    margin-bottom: 10px;
+    font-family: sans-serif;
 }
 
 nav a {
@@ -64,48 +47,25 @@ nav a {
     text-decoration: none;
 }
 
-nav a:hover {
-    text-decoration: overline;
-}
-
-.active {
-    color: yellow;
-}
-
-main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 20px;
-}
-
-.card {
-    border: 1px solid #ccc;
-    padding: 20px;
-    width: 100%;
-    margin-bottom: 10px;
-    background-color: #C6AC8F;
-}
-
 .card h2 {
     margin-bottom: 10px;
-    color: #fff
+    color: #669BBC
 }
 
 .card ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    color: #fff
+    color: #F5F5DC
 }
 
 footer {
+    font-family: sans-serif;
     position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
-    background: #011936;
+    background: #9932CC;
     min-height: 100px;
     padding: 20px 50px;
     display: flex;
@@ -121,4 +81,50 @@ footer p {
     font-size: 1rem;
     font-weight: 300;
 
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #011638;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    grid-column: span 2;
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav li {
+    margin-bottom: 10px;
+}
+
+
+
+nav a:hover {
+    text-decoration: overline;
+}
+
+.active {
+    color: yellow;
+}
+
+main {
+    font-family: 'Helvetica Neue', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
 }
