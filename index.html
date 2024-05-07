@@ -71,7 +71,18 @@
         <section class="card">
             <h2>Information</h2>
             <ul>
-                <li>Weather is fresh</li>
+                <li class="label">
+                    <div class="partly_cloudy">
+                        <div class="partly_cloudy__sun"></div>
+                        <div class="partly_cloudy__cloud"></div>
+                    </div>
+                    <p>Weather is sunny with clouds</p>
+                </li>
+                <li>
+                    <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+
+                    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+                </li>
             </ul>
         </section>
     </main>
@@ -89,6 +100,7 @@
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/getDates.js"></script>
+
 </body>
 
 </html>
