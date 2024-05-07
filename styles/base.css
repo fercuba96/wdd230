@@ -60,7 +60,7 @@ nav {
     margin-bottom: 20px;
     background-color: #36454f;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 1200px;
 }
 
 .navigation a {
@@ -122,7 +122,7 @@ nav a:hover {
 }
 
 main {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -153,7 +153,9 @@ main {
 
 .card h2 {
     margin-bottom: 10px;
-    color: #fff
+    color: #fff;
+    background-color: #060d30;
+    padding: 10px;
 }
 
 .card ul {
@@ -174,6 +176,15 @@ main {
 .card a:hover {
     text-decoration: underline;
     color: yellowgreen;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 350px;
+    height: auto;
 }
 
 footer {
@@ -197,4 +208,39 @@ footer p {
     font-size: 1rem;
     font-weight: 300;
 
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+.hero {
+    margin: 10px auto;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, .1);
+    height: 300px;
+    grid-column: span 2;
+}
+
+.hero img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.herolabel {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: radial-gradient(#fff, #4D5B97);
+    border: 1px solid rgba(0, 0, 0, .75);
+    padding: 1rem;
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.75;
+}
+
+.herolabel p {
+    margin: 0;
+    padding: .25rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+    font-family: "Great Vibes", serif;
 }

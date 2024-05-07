@@ -25,7 +25,7 @@
         <div id="mode">
             🕶️
         </div>
-        <img src="images/profileimageofme.jpg" alt="Fernando Cuba Profile" width="150" height="144">
+        <img src="images/profileimagesize.webp" alt="Fernando Cuba Profile" loading="lazy" width="150" height="193">
         <span>Fernando Cuba</span>
     </header>
     <nav>
@@ -39,6 +39,17 @@
         </ul>
     </nav>
     <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/arequipatemple-small.webp">
+                <source media="(max-width: 960px)" srcset="images/arequipatemple-large.webp">
+                <img src="images/arequipatemple-large.webp" alt="My favorite temple" loading="lazy" width="960"
+                    height="600">
+            </picture>
+            <div class="herolabel">
+                <p>Arequipa Temple, Peru</p>
+            </div>
+        </div>
         <h1>WDD 230: Web Frontend Development</h1>
         <section class="card">
             <h2>Learning Activities</h2>
@@ -64,6 +75,14 @@
             </ul>
         </section>
     </main>
+    <section class="map">
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1951.198577609078!2d-76.94886522538799!3d-12.016156002089327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c438dde9e05b%3A0x55f5fe2197c09b0c!2sPlaza%20de%20Armas%20de%20Huachipa!5e0!3m2!1ses!2spe!4v1715111168788!5m2!1ses!2spe"
+            width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
     <footer>
         <p id="copyright"></p>
         <p>Fernando Cuba - Lima, Peru</p>
