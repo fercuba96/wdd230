@@ -25,7 +25,11 @@
         <div id="mode">
             🕶️
         </div>
-        <img src="images/profileimagesize.webp" alt="Fernando Cuba Profile" loading="lazy" width="150" height="193">
+        <picture>
+            <source media="(max-width: 400px)" srcset="images/profileimagesize-small.webp">
+            <source media="(max-width: 960px)" srcset="images/profileimagesize.webp">
+            <img src="images/profileimagesize.webp" alt="Fernando Cuba Profile" loading="lazy" width="150" height="193">
+        </picture>
         <span>Fernando Cuba</span>
     </header>
     <nav>
