@@ -30,7 +30,6 @@ function displayList(item) {
         list.removeChild(li);
         deleteChapter(li.textContent);
     });
-    console.log('I like to copy code instead of typing it out myself and trying to understand it.');
 }
 
 function setChapterList() {
