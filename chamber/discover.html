@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fernando Cuba - WDD 230 -W02: Project Milestone - The Chamber of Commerce Site Plan</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development -Fernando Cuba -course assignment portal">
+    <meta name="author" content="Fernando Cuba">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Fernando Cuba -BakeryChamber of Commerce Home Page" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://cdn.cuponidad.pe/images/Deals/aquaparkhuachiapa2345.jpg" />
+    <meta property="og:url" content="https://fercuba96.github.io/wdd230/chamber/index.html" />
+</head>
+
+<body>
+    <header>
+        <span>W02: Project Milestone - The Chamber of Commerce Site Plan</span>
+    </header>
+    <nav>
+        <p id="menu"></p>
+        <ul class="navigation">
+            <li><a href="https://fercuba96.github.io/wdd230/">Home</a></li>
+            <li><a href="https://fercuba96.github.io/wdd230/chamber" class="active">Chamber</a></li>
+            <li><a href="https://fercuba96.github.io/wdd230/week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+
+        <ol class="sidebar">
+            <li>
+                <h3>Demographics</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis iste voluptatem esse et sunt
+                    unde vitae facilis sequi. Temporibus placeat minima ut, pariatur obcaecati natus inventore aliquid.
+                    Distinctio, deleniti. Temporibus?</p>
+            </li>
+            <li>
+                <h3>Stadistics</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum qui nam sint odit eius sequi
+                    architecto tempore. Soluta cupiditate, fuga corrupti minima qui, maxime officiis, ex culpa et sequi
+                    doloremque. </p>
+            </li>
+
+            <li class="calendar">
+                <h3>Calendar</h3>
+                <div id="right">
+                    <p id="monthAndYear">
+                    </p>
+                    <div class="button-container-calendar">
+                        <button id="previous" onclick="previous()">
+                            ‹
+                        </button>
+                        <button id="next" onclick="next()">
+                            ›
+                        </button>
+                    </div>
+                    <table class="table-calendar" id="calendar" data-lang="en">
+                        <thead id="thead-month"></thead>
+                        <!-- Table body for displaying the calendar -->
+                        <tbody id="calendar-body"></tbody>
+                    </table>
+                    <div class="footer-container-calendar">
+                        <label for="month">Jump To: </label>
+                        <!-- Dropdowns to select a specific month and year -->
+                        <select id="month" onchange="jump()">
+                            <option value=0>Jan</option>
+                            <option value=1>Feb</option>
+                            <option value=2>Mar</option>
+                            <option value=3>Apr</option>
+                            <option value=4>May</option>
+                            <option value=5>Jun</option>
+                            <option value=6>Jul</option>
+                            <option value=7>Aug</option>
+                            <option value=8>Sep</option>
+                            <option value=9>Oct</option>
+                            <option value=10>Nov</option>
+                            <option value=11>Dec</option>
+                        </select>
+                        <!-- Dropdown to select a specific year -->
+                        <select id="year" onchange="jump()"></select>
+                    </div>
+                </div>
+
+            </li>
+            <li>
+                <h3>Visits</h3>
+                <p><span class="label">About your visits: </span><span class="visits"></span></p>
+            </li>
+
+        </ol>
+        <ol>
+            <li>
+                <picture>
+                    <source media="(min-width: 400px)" srcset="images/bread-one-small.webp">
+                    <source media="(min-width: 960px)" srcset="images/bread-one-medium.webp">
+                    <img src="images/bread-one-large.webp" alt="Bread one image" loading="lazy" width="400"
+                        height="600">
+                </picture>
+                <picture>
+                    <source media="(max-width: 400px)" srcset="images/bread-two-small.webp">
+                    <source media="(max-width: 960px)" srcset="images/bread-two-medium.webp">
+                    <img src="images/bread-two-large.webp" alt="Bread two image" loading="lazy" width="400"
+                        height="600">
+                </picture>
+                <picture>
+                    <source media="(max-width: 400px)" srcset="images/bread-three-small.webp">
+                    <source media="(max-width: 960px)" srcset="images/bread-three-medium.webp">
+                    <img src="images/bread-three-large.webp" alt="Bread three image" loading="lazy" width="400"
+                        height="600">
+                </picture>
+                <picture>
+                    <source media="(max-width: 400px)" srcset="images/bread-four-small.webp">
+                    <source media="(max-width: 960px)" srcset="images/bread-four-medium.webp">
+                    <img src="images/bread-four-large.webp" alt="Bread four image" loading="lazy" width="400"
+                        height="600">
+                </picture>
+                <picture>
+                    <source media="(max-width: 400px)" srcset="images/bread-five-small.webp">
+                    <source media="(max-width: 960px)" srcset="images/bread-five-medium.webp">
+                    <img src="images/bread-five-large.webp" alt="Bread five image" loading="lazy" width="400"
+                        height="600">
+                </picture>
+                <picture>
+                    <source media="(max-width: 400px)" srcset="images/bread-six-small.webp">
+                    <source media="(max-width: 960px)" srcset="images/bread-six-medium.webp">
+                    <img src="images/bread-six-large.webp" alt="Bread six image" loading="lazy" width="400"
+                        height="600">
+                </picture>
+            </li>
+        </ol>
+
+    </main>
+    <footer>
+        <p id="copyright"></p>
+        <p id="projectinfo"></p>
+        <p>Fernando Cuba - Lima, Peru</p>
+        <p id="lastModified"></p>
+
+    </footer>
+    <script src="scripts/chamber.js"></script>
+</body>
+
+</html>
