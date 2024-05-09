@@ -36,6 +36,7 @@ hamButton.addEventListener('click', () => {
     navigation.classList.toggle('open');
     hamButton.classList.toggle('open');
 });
+
 const visitsDisplay = document.querySelector(".visits");
 
 let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
