@@ -47,6 +47,11 @@ nav a {
     text-decoration: none;
 }
 
+h1 {
+    background-color: #bfc5c5;
+    padding: 10px
+}
+
 .card h2 {
     margin-bottom: 10px;
     color: #669BBC
