@@ -25,20 +25,24 @@ hamButton.addEventListener('click', () => {
     hamButton.classList.toggle('open');
 });
 
+const lastVisitDateString = window.localStorage.getItem("lastVisitDate");
+const lastVisitDate = lastVisitDateString ? new Date(lastVisitDateString) : new Date();
+
+const todaycount = new Date();
+const daysDifference = Math.floor((todaycount - lastVisitDate) / (1000 * 60 * 60 * 24));
+
 
 const visitsDisplay = document.querySelector(".visits");
 
-let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
-
-if (numVisits !== 0) {
-    visitsDisplay.textContent = `Your visits are ` + numVisits;
+if (daysDifference < 1) {
+    visitsDisplay.textContent = `Back so soon! Awesome!`;
+} else if (daysDifference === 1) {
+    visitsDisplay.textContent = `You last visited 1 day ago.`;
 } else {
-    visitsDisplay.textContent = `Welcome! Let us know if you have any questions!`;
+    visitsDisplay.textContent = `You last visited ${daysDifference} days ago.`;
 }
 
-numVisits++;
-
-localStorage.setItem("numVisits-ls", numVisits);
+window.localStorage.setItem("lastVisitDate", todaycount.toISOString());
 
 let events = [];
 
@@ -51,7 +55,6 @@ function generate_year_range(start, end) {
     return years;
 }
 
-// Initialize date-related letiables
 today = new Date();
 currentMonth = today.getMonth();
 currentYear = today.getFullYear();
@@ -96,15 +99,12 @@ monthAndYear =
     document.getElementById("monthAndYear");
 showCalendar(currentMonth, currentYear);
 
-// Function to navigate to the next month
 function next() {
     currentYear = currentMonth === 11 ?
         currentYear + 1 : currentYear;
     currentMonth = (currentMonth + 1) % 12;
     showCalendar(currentMonth, currentYear);
 }
-
-// Function to navigate to the previous month
 function previous() {
     currentYear = currentMonth === 0 ?
         currentYear - 1 : currentYear;
@@ -113,14 +113,12 @@ function previous() {
     showCalendar(currentMonth, currentYear);
 }
 
-// Function to jump to a specific month and year
 function jump() {
     currentYear = parseInt(selectYear.value);
     currentMonth = parseInt(selectMonth.value);
     showCalendar(currentMonth, currentYear);
 }
 
-// Function to display the calendar
 function showCalendar(month, year) {
     let firstDay = new Date(year, month, 1).getDay();
     tbl = document.getElementById("calendar-body");
@@ -157,7 +155,6 @@ function showCalendar(month, year) {
                     cell.className = "date-picker selected";
                 }
 
-                // Check if there are events on this date
                 if (hasEventOnDate(date, month, year)) {
                     cell.classList.add("event-marker");
                     cell.appendChild(
@@ -173,7 +170,6 @@ function showCalendar(month, year) {
     }
 }
 
-// Function to create an event tooltip
 function createEventTooltip(date, month, year) {
     let tooltip = document.createElement("div");
     tooltip.className = "event-tooltip";
@@ -191,7 +187,6 @@ function createEventTooltip(date, month, year) {
     return tooltip;
 }
 
-// Function to get events on a specific date
 function getEventsOnDate(date, month, year) {
     return events.filter(function (event) {
         let eventDate = new Date(event.date);
@@ -202,16 +197,12 @@ function getEventsOnDate(date, month, year) {
         );
     });
 }
-
-// Function to check if there are events on a specific date
 function hasEventOnDate(date, month, year) {
     return getEventsOnDate(date, month, year).length > 0;
 }
 
-// Function to get the number of days in a month
 function daysInMonth(iMonth, iYear) {
     return 32 - new Date(iYear, iMonth, 32).getDate();
 }
 
-// Call the showCalendar function initially to display the calendar
 showCalendar(currentMonth, currentYear);

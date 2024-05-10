@@ -197,6 +197,20 @@ img {
     background-color: #011638;
 }
 
+picture {
+    background-color: #fff;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin: .5rem;
+}
+
+.hover:hover {
+    box-shadow: 0 0 50px #333;
+}
+
 h3 {
     margin-bottom: 10px;
     color: #669BBC
