@@ -35,7 +35,7 @@ const daysDifference = Math.floor((todaycount - lastVisitDate) / (1000 * 60 * 60
 const visitsDisplay = document.querySelector(".visits");
 
 if (daysDifference < 1) {
-    visitsDisplay.textContent = `Back so soon! Awesome!`;
+    visitsDisplay.textContent = `It is good to have your visit today!`;
 } else if (daysDifference === 1) {
     visitsDisplay.textContent = `You last visited 1 day ago.`;
 } else {
