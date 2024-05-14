@@ -23,7 +23,7 @@ modeButton.addEventListener("click", () => {
         main.style.color = "#fff";
         modeButton.textContent = "🔆";
     } else {
-        main.style.background = "#eee";
+        main.style.background = "white";
         main.style.color = "#000";
         modeButton.textContent = "🕶️";
     }
@@ -37,20 +37,6 @@ hamButton.addEventListener('click', () => {
     hamButton.classList.toggle('open');
 });
 
-const visitsDisplay = document.querySelector(".visits");
-
-let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
-
-if (numVisits !== 0) {
-    visitsDisplay.textContent = numVisits;
-} else {
-    visitsDisplay.textContent = `This is your first visit. 🥳 Welcome!`;
-}
-
-numVisits++;
-
-localStorage.setItem("numVisits-ls", numVisits);
-
 const kp1 = document.querySelector("#password1");
 const kp2 = document.querySelector("#password2");
 const message = document.querySelector('#formmessage');
@@ -60,8 +46,8 @@ kp2.addEventListener("focusout", checkSame);
 // This should be refactored.
 function checkSame() {
     if (kp1.value !== kp2.value) {
-        message.textContent = "❗Key Phrases DO NOT MATCH!";
-        message.style.visibility = "show";
+        message.textContent = "❗Passwords do not match!";
+        message.style.visibility = "visible";
         kp2.style.backgroundColor = "#fff0f3";
         kp2.value = "";
         kp2.focus();
@@ -75,7 +61,6 @@ function checkSame() {
 const rangevalue = document.getElementById("rangevalue");
 const range = document.getElementById("r");
 
-// RANGE event listener
 range.addEventListener('change', displayRatingValue);
 range.addEventListener('input', displayRatingValue);
 

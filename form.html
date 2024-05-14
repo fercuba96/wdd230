@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fernando Cuba - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development -Fernando Cuba -course assignment portal">
+    <meta name="author" content="Fernando Cuba">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Fernando Cuba - Content of Web Development course(WDD230) of BYU Idaho" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://elperuano.pe/fotografia/thumbnail/2023/02/15/000235314M.jpg" />
+    <meta property="og:url" content="https://fercuba96.github.io/wdd230/" />
+</head>
+
+<body>
+    <header>
+        <div id="mode">
+            🕶️
+        </div>
+        <picture>
+            <source media="(max-width: 400px)" srcset="images/profile-image-small.webp">
+            <source media="(max-width: 960px)" srcset="images/profile-image-medium.webp">
+            <img src="images/profile-image-large.webp" alt="Fernando Cuba Profile" loading="lazy" width="150"
+                height="193">
+        </picture>
+        <span>Fernando Cuba</span>
+    </header>
+    <nav>
+        <div id="menu"></div>
+        <ul class="navigation">
+
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href=" https://fercuba96.github.io/wdd230/chamber">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Team Activity - Form</h1>
+        <form method="get" action="thanks.html" class="taf">
+            <fieldset>
+                <legend>User information</legend>
+                <label> Username*<input type="text" id="username" name="username" required></label>
+                <label> Password*<input type="password" id="password1" name="password1" pattern=".{8,}"
+                        title="Eight or more characters" required></label>
+                <label> Password confirmation*<input type="password" id="password2" name="password2" required></label>
+                <div id="formmessage"></div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Email Information</legend>
+                <label> Email*<input type="email" id="email" name="email" placeholder="someone@byui.edu"
+                        pattern=[a-zA-Z0-9._%+\-]+@byui\.edu title="Please enter a valid email address"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Page Rating</legend>
+                <label>Choose from 1-10
+                    <div id="rangevalue">1</div>
+                    <input type="range" id="r" name="r" min="1" max="10" value="1" step="1" list="rangevalues">
+                    <datalist id="rangevalues">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </datalist>
+                </label>
+            </fieldset>
+
+            <input type="submit" value="Send my rate">
+
+        </form>
+
+
+    </main>
+    <footer>
+        <p id="copyright"></p>
+        <p>Fernando Cuba - Lima, Peru</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/form.js"></script>
+</body>
+
+</html>
