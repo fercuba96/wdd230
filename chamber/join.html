@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fernando Cuba - WDD 230 -W02: Project Milestone - The Chamber of Commerce Site Plan</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development -Fernando Cuba -course assignment portal">
+    <meta name="author" content="Fernando Cuba">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Fernando Cuba -BakeryChamber of Commerce Home Page" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://cdn.cuponidad.pe/images/Deals/aquaparkhuachiapa2345.jpg" />
+    <meta property="og:url" content="https://fercuba96.github.io/wdd230/chamber/index.html" />
+</head>
+
+<body>
+    <header>
+        <span>Fernando Cuba - WDD 230</span>
+    </header>
+    <nav>
+        <p id="menu"></p>
+        <ul class="navigation">
+            <li><a href="https://fercuba96.github.io/wdd230/">Home</a></li>
+            <li><a href="https://fercuba96.github.io/wdd230/chamber" class="active">Chamber</a></li>
+            <li><a href="https://fercuba96.github.io/wdd230/week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Application</h1>
+        <form method="get" action="thankyou.html" class="afc">
+            <fieldset>
+                <legend>Personal information</legend>
+                <label> First name*<input type="text" id="fname" name="fname" required></label>
+                <label> Last name*<input type="text" id="lname" name="lname" required></label>
+                <label> Email*<input type="email" id="email" name="email" placeholder="someone@gmail.com"
+                        required></label>
+                <label> Phone*<input type="tel" id="phone" name="phone" placeholder="1235551234" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Business Information</legend>
+                <label>Business/organization's name*<input type="text" id="bname" name="bname" required></label>
+                <label>Title/Position<input type="text" id="position" name="position" pattern="[A-Za-z].{8,}"></label>
+                <label>Business/organization's description<input type="text" id="bdescript" name="bdescript"></label>
+
+            </fieldset>
+            <fieldset>
+                <legend>Membership</legend>
+                <div>Membership level - Find more information in this page</div>
+                <label><input type="radio" name="membership" value="nofee">NP Membership is for non profit organizations
+                    and there is no fee</label>
+                <label><input type="radio" name="membership" value="bronze">Bronze Membership</label>
+                <label><input type="radio" name="membership" value="silver">Silver Membership</label>
+                <label><input type="radio" name="membership" value="gold">Gold Membership</label>
+                <label><input type="hidden" id="timestamp" name="timestamp"></label>
+            </fieldset>
+            <label>
+                <input type="submit" value="Join this chamber">
+            </label>
+        </form>
+        <section>
+            <h2>Membership benefits</h2>
+            <ul class="benefits">
+
+                <li>
+                    <h3>Level one</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit fugit optio modi maiores. Sed
+                        deserunt aperiam officia dolor, obcaecati temporibus aut placeat facere qui dicta quo enim
+                        distinctio perferendis. Mollitia!
+                    </p>
+                </li>
+                <li>
+                    <h3>Level two</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit fugit optio modi maiores. Sed
+                        deserunt aperiam officia dolor, obcaecati temporibus aut placeat facere qui dicta quo enim
+                        distinctio perferendis. Mollitia!
+                    </p>
+                </li>
+                <li>
+                    <h3>Level three</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit fugit optio modi maiores. Sed
+                        deserunt aperiam officia dolor, obcaecati temporibus aut placeat facere qui dicta quo enim
+                        distinctio perferendis. Mollitia!
+                    </p>
+                </li>
+                <li>
+                    <h3>Level four</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit fugit optio modi maiores. Sed
+                        deserunt aperiam officia dolor, obcaecati temporibus aut placeat facere qui dicta quo enim
+                        distinctio perferendis. Mollitia!
+                    </p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p id="copyright"></p>
+        <p id="projectinfo"></p>
+        <p>Fernando Cuba - Lima, Peru</p>
+        <p id="lastModified"></p>
+
+    </footer>
+    <script src="scripts/chamber.js"></script>
+</body>
+
+</html>

@@ -327,3 +327,90 @@ h3 {
     border-radius: 3px;
     padding: 5px 1em;
 }
+
+/*-------------- FORM STYLING-------------*/
+.afc fieldset {
+
+    margin: 2rem 0;
+    border: 1px bold #d7c9d4;
+    border-radius: 20px;
+    padding: .7rem 2%;
+}
+
+.afc legend {
+    color: #011638;
+    padding: 0 .5rem;
+}
+
+.afc label {
+    display: block;
+    padding-top: 1rem;
+    color: #100520;
+    font-size: .9rem;
+    font-family: Tahoma, sans-serif;
+
+}
+
+.afc div {
+    padding-top: 1rem;
+    color: #2d8feb;
+    font-size: 1rem;
+    padding-left: 1rem;
+
+}
+
+.afc input[type="text"],
+.afc input[type="tel"],
+.afc input[type="email"],
+.afc input[type="url"],
+.afc input[type="date"],
+.afc select,
+.afc input[type="number"] {
+    background-color: #d5e9fd;
+    display: block;
+    border: solid 1px #5b0369;
+    border-radius: 10px;
+    padding: .75rem;
+    color: #4e2641;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.afc input[type="radio"] {
+    margin-right: 6px;
+}
+
+.afc input[type="submit"] {
+    font-family: 'Ubuntu', sans-serif;
+    border: solid 1px transparent;
+    background: #1c89ff;
+    color: #e2e0d7;
+    height: 48px;
+    border-radius: 18px;
+    width: 96%;
+    max-width: 400px;
+    margin: -1rem 2% 2rem 2%;
+    padding: .7rem;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all .1s ease-in-out;
+    box-shadow: 1px 1px 4px #080913;
+
+    &:hover {
+        background-color: #011638;
+        border-color: #fff;
+        transition: all .1s ease-in-out;
+    }
+}
+
+.afc input:required {
+    border-left: solid 8px red;
+}
+
+.afc input:required:valid {
+    border-left: solid 8px green;
+}

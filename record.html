@@ -9,6 +9,7 @@
     <meta name="author" content="Fernando Cuba">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/form.css">
     <link rel="icon" href="favicon.ico">
@@ -43,45 +44,11 @@
     </nav>
     <main>
         <h1>Team Activity - Form</h1>
-        <form method="get" action="record.html" class="taf">
-            <fieldset>
-                <legend>User information</legend>
-                <label> Username*<input type="text" id="username" name="username" required></label>
-                <label> Password*<input type="password" id="password1" name="password1" pattern=".{8,}"
-                        title="Eight or more characters" required></label>
-                <label> Password confirmation*<input type="password" id="password2" name="password2" required></label>
-                <div id="formmessage"></div>
+        <h2>
+            Thanks for sending you rate, we will take it in to consideration. We know that being part of BYU is a great
+            experience!
+        </h2>
 
-            </fieldset>
-
-            <fieldset>
-                <legend>Email Information</legend>
-                <label> Email*<input type="email" id="email" name="email" placeholder="someone@byui.edu"
-                        pattern=[a-zA-Z0-9._%+\-]+@byui\.edu title="Please enter a valid email address"></label>
-            </fieldset>
-            <fieldset>
-                <legend>Page Rating</legend>
-                <label>Your rate:
-                    <em id="rangevalue">1</em>
-                    <input type="range" id="r" name="r" min="1" max="10" value="1" step="1" list="rangevalues">
-                    <datalist id="rangevalues">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                    </datalist>
-                </label>
-            </fieldset>
-            <label>
-                <input type="submit" value="Send my rate">
-            </label>
-        </form>
     </main>
     <footer>
         <p id="copyright"></p>

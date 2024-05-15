@@ -101,6 +101,14 @@ h1 {
     grid-column: span 2;
 }
 
+h2 {
+    margin-bottom: 10px;
+    color: #fff;
+    background-color: #060d30;
+    padding: 10px;
+    text-align: center;
+    grid-column: span 2;
+}
 
 nav ul {
     list-style-type: none;
@@ -213,40 +221,40 @@ footer p {
     appearance: none;
 }
 
-.taf input[type="radio"],
-.taf input[type="checkbox"] {
-    margin-right: 6px;
-}
-
 .taf input[type="submit"] {
     font-family: 'Ubuntu', sans-serif;
     border: 3px solid hsl(0, 86%, 22%);
-    background: #080913;
+    background: #2c2c2f;
     color: #e2e0d7;
-    border-radius: 20px;
+    border-radius: 10px;
     width: 96%;
     max-width: 400px;
     margin: -1rem 2% 2rem 2%;
-    padding: .7rem;
+    padding: .9rem;
     font-size: 18px;
     font-weight: bold;
     letter-spacing: 1px;
     cursor: pointer;
     overflow: hidden;
     transition: all .35s;
-    box-shadow: 1px 1px 4px #080913;
+    box-shadow: 3px 2px 4px #080913;
 }
 
 .taf input:required {
-    border-bottom: solid 8px red;
+    border-left: solid 8px red;
 }
 
 .taf input:required:valid {
-    border-bottom: solid 8px green;
+    border-left: solid 8px green;
 }
 
 .taf input:focus {
     outline: none;
+}
+
+.taf input[type="range"] {
+    display: block;
+    padding-top: 0;
 }
 
 #r {
@@ -261,13 +269,15 @@ footer p {
 
 #rangevalues {
     display: flex;
-    margin: 1 0 0 25px;
+    margin: 0;
     width: 200px;
 }
 
 #rangevalues option {
     flex: 1 1 auto;
 }
+
+
 
 @media screen and (min-width: 768px) {
 
