@@ -414,3 +414,24 @@ h3 {
 .afc input:required:valid {
     border-left: solid 8px green;
 }
+
+section h2 {
+    color: #011638;
+    text-align: center;
+    padding: 1.5rem;
+    border: solid beige;
+    border-radius: 6px;
+    background-color: rgb(202, 218, 223);
+}
+
+section h3 {
+    color: #100520;
+    padding-top: 1.2rem;
+    padding-bottom: 0%;
+    padding-left: 1.5rem;
+}
+
+section li {
+    padding-left: .5rem;
+    display: block;
+}
