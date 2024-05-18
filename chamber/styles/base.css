@@ -443,18 +443,20 @@ section h3 {
 .gold {
     background-color: #100520;
     color: gold;
+    appearance: none;
 }
 
 .silver {
     color: silver;
     background-color: #100520;
+    appearance: none;
 
 }
 
 .bronze {
     color: burlywood;
     background-color: #100520;
-
+    appearance: none;
 }
 
 section li {
@@ -478,9 +480,11 @@ textarea {
     color: #4e2641;
     border: solid 1px #5b0369;
     border-radius: 4px;
+    appearance: none;
 }
 
 .thankyou {
     display: block;
     grid-column: span 2;
+
 }
