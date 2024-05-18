@@ -369,11 +369,13 @@ h3 {
 .afc select,
 .afc input[type="number"] {
     background-color: #d5e9fd;
-    display: block;
+    color: #4e2641;
     border: solid 1px #5b0369;
+    display: block;
+
     border-radius: 10px;
     padding: .75rem;
-    color: #4e2641;
+
     width: 100%;
     max-width: 400px;
     appearance: none;
@@ -427,18 +429,32 @@ section h2 {
 }
 
 section h3 {
-    color: #100520;
+
     padding-top: 0.9rem;
     padding-bottom: 0%;
     padding-left: 1.5rem;
     border: solid seagreen;
-    color: #100520;
-    background-color: #80ff72;
     border-radius: 18px;
-
     padding: 10px;
     max-width: 400px;
     text-align: center;
+}
+
+.gold {
+    background-color: #100520;
+    color: gold;
+}
+
+.silver {
+    color: silver;
+    background-color: #100520;
+
+}
+
+.bronze {
+    color: burlywood;
+    background-color: #100520;
+
 }
 
 section li {
@@ -450,4 +466,21 @@ section li {
 .benefits {
     border: solid rgb(93, 163, 237);
     border-radius: 6px;
+}
+
+textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 0.5rem;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    background-color: #d5e9fd;
+    color: #4e2641;
+    border: solid 1px #5b0369;
+    border-radius: 4px;
+}
+
+.thankyou {
+    display: block;
+    grid-column: span 2;
 }
