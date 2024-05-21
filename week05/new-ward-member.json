@@ -1,0 +1,23 @@
+{
+    "familyName": "Sanchez Carrion",
+    "dateMoved": "Thu, 2 Nov 2023 23:15:30 GMT",
+    "numberPeople": 3,
+    "visitedBish": true,
+    "familyMembers": [
+        {
+            "name": "Fabian Sanchez",
+            "gender": "male",
+            "birthDate": "Tu, 5 Feb 1985 23:15:30 GMT"
+        },
+        {
+            "name": "Rosa Carrion",
+            "gender": "female",
+            "birthDate": "Wed, 12 March 2023 23:15:30 GMT"
+        },
+        {
+            "name": "Almendra Sanchez",
+            "gender": "female",
+            "birthDate": "Fri, 17 Sep 2023 23:15:30 GMT"
+        }
+    ]
+}
