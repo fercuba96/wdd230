@@ -338,6 +338,11 @@ p {
     animation: translateUp 2s linear infinite alternate;
 }
 
+figure {
+
+    text-align: center;
+}
+
 @keyframes fadeIn {
     0% {
         opacity: 0;

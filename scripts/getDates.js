@@ -32,21 +32,23 @@ modeButton.addEventListener("click", () => {
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 
-hamButton.addEventListener('click', () => {
-    navigation.classList.toggle('open');
-    hamButton.classList.toggle('open');
-});
-
+if (hamButton) {
+    hamButton.addEventListener('click', () => {
+        navigation.classList.toggle('open');
+        hamButton.classList.toggle('open');
+    });
+}
 const visitsDisplay = document.querySelector(".visits");
 
 let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
 
-if (numVisits !== 0) {
-    visitsDisplay.textContent = numVisits;
-} else {
-    visitsDisplay.textContent = `This is your first visit. 🥳 Welcome!`;
+if (visitsDisplay) {
+    if (numVisits !== 0) {
+        visitsDisplay.textContent = numVisits;
+    } else {
+        visitsDisplay.textContent = `This is your first visit. 🥳 Welcome!`;
+    }
 }
-
 numVisits++;
 
 localStorage.setItem("numVisits-ls", numVisits);
@@ -54,10 +56,9 @@ localStorage.setItem("numVisits-ls", numVisits);
 const kp1 = document.querySelector("#password1");
 const kp2 = document.querySelector("#password2");
 const message = document.querySelector('#formmessage');
-
-kp2.addEventListener("focusout", checkSame);
-
-// This should be refactored.
+if (kp2) {
+    kp2.addEventListener("focusout", checkSame);
+}
 function checkSame() {
     if (kp1.value !== kp2.value) {
         message.textContent = "❗Key Phrases DO NOT MATCH!";
@@ -75,10 +76,46 @@ function checkSame() {
 const rangevalue = document.getElementById("rangevalue");
 const range = document.getElementById("r");
 
-// RANGE event listener
-range.addEventListener('change', displayRatingValue);
-range.addEventListener('input', displayRatingValue);
+if (range) {
+    range.addEventListener('change', displayRatingValue);
+    range.addEventListener('input', displayRatingValue);
+}
 
 function displayRatingValue() {
-    rangevalue.innerHTML = range.value;
+    if (rangevalue) {
+        rangevalue.innerHTML = range.value;
+    }
+}
+
+const currentTemp = document.querySelector('#current-temp');
+const weatherIcon = document.querySelector('#weather-icon');
+const captionDesc = document.querySelector('figcaption');
+
+const url_home = 'https://api.openweathermap.org/data/2.5/weather?lat=-12.06&lon=-76.94&appid=e1681f168c1a7023a0730ec3ead6d05c&units=imperial';
+
+async function apiFetch() {
+    try {
+        const response = await fetch(url_home);
+        if (response.ok) {
+            const data_home = await response.json();
+            displayResults(data_home);
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+apiFetch();
+
+function displayResults(data_home) {
+    if (currentTemp && weatherIcon && captionDesc) {
+        currentTemp.innerHTML = `${data_home.main.temp}&deg;F`;
+        const iconsrc = `https://openweathermap.org/img/w/${data_home.weather[0].icon}.png`;
+        let desc = data_home.weather[0].description;
+        weatherIcon.setAttribute('src', iconsrc);
+        weatherIcon.setAttribute('alt', desc);
+        captionDesc.textContent = `${desc}`;
+    }
 }

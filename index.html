@@ -69,7 +69,7 @@
                         href="week03/bom.html">Web Storage
                         API - localStorage</a></li>
                 <li>Week 04: <a href="https://codepen.io/Ferxxo96z/pen/PovwOeN">CSS Pseudo-Classes</a><a
-                        href="week04/images/CSS-Combinators-exercises-screenshot .png">CSS
+                        href="week04/images/CSS-Combinators-exercises-screenshot.png">CSS
                         Combinators</a><a href="week04/tablebuild.html">HTML Tables for Data Presentation</a> <a
                         href="week04/Form-start/index.html">HTML Form</a></li>
                 <li>Week 05: <a href="https://codepen.io/Ferxxo96z/pen/oNRxjJq">CSS Pseudo-elements</a> <a
@@ -81,19 +81,22 @@
         </section>
         <section class="card">
             <h2>Information</h2>
+
             <ul>
                 <li class="label">
-                    <div class="partly_cloudy">
-                        <div class="partly_cloudy__sun"></div>
-                        <div class="partly_cloudy__cloud"></div>
-                    </div>
-                    <p>Weather: Sunny with clouds</p>
+                    <figure>
+                        <img id="weather-icon" src="default" alt="default">
+                        <p><span id="current-temp"></span></p>
+                        <figcaption></figcaption>
+                    </figure>
+
                 </li>
                 <li>
                     <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
                 </li>
             </ul>
         </section>
+
     </main>
     <div class="map">
 
