@@ -58,25 +58,7 @@
         <h1>WDD 230: Web Frontend Development</h1>
         <section class="card">
             <h2>Learning Activities</h2>
-            <ul>
-                <li>Week 01: <a href="week01/holygrail.html">Laoyut</a><a href="week01/media-query.html">Media
-                        Query</a><a href="https://codepen.io/Ferxxo96z/pen/rNbgmXB">JS Pen</a></li>
-                <li>Week 02: <a href="week02/design.html">Web Design Principles</a><a
-                        href="https://codepen.io/Ferxxo96z/pen/eYoavxr?editors=1010">Responsive menu</a><a
-                        href="week02/bom.html">JS: DOM Manipulation</a></li>
-                <li>Week 03: <a href="week03/images/landscape.webp">WebP</a> <a href="week03/lazyload.html">Lazy
-                        loading</a> <a href="week03/responsive-images.html">Responsive Images</a><a
-                        href="week03/bom.html">Web Storage
-                        API - localStorage</a></li>
-                <li>Week 04: <a href="https://codepen.io/Ferxxo96z/pen/PovwOeN">CSS Pseudo-Classes</a><a
-                        href="week04/images/CSS-Combinators-exercises-screenshot.png">CSS
-                        Combinators</a><a href="week04/tablebuild.html">HTML Tables for Data Presentation</a> <a
-                        href="week04/Form-start/index.html">HTML Form</a></li>
-                <li>Week 05: <a href="https://codepen.io/Ferxxo96z/pen/oNRxjJq">CSS Pseudo-elements</a> <a
-                        href="week05/new-ward-member.json">JSON</a> <a href="week05/prophets.html">The Fetch API</a><a
-                        href="week05/weather.html">Weather API</a>
-                </li>
-                <li>Week 06: <a href="">Coming soon</a></li>
+            <ul id="learninglinks">
             </ul>
         </section>
         <section class="card">
@@ -85,9 +67,11 @@
             <ul>
                 <li class="label">
                     <figure>
-                        <img id="weather-icon" src="default" alt="default">
-                        <p><span id="current-temp"></span></p>
-                        <figcaption></figcaption>
+                        <p> <img id="weather-icon" src="default" alt="default">
+                            : <span id="current-temp">
+                                <figcaption></figcaption>
+                            </span>
+                        </p>
                     </figure>
 
                 </li>
@@ -111,8 +95,8 @@
         <p>Fernando Cuba - Lima, Peru</p>
         <p id="lastModified"></p>
     </footer>
-    <script src="scripts/getDates.js"></script>
-
+    <script src="scripts/getDates.js" defer></script>
+    <script src="scripts/links.js" defer></script>
 </body>
 
 </html>
