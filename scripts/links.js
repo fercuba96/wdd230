@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
         weeks.forEach((week) => {
             // Create a list item for the week
             let weekListItem = document.createElement('li');
-            let weekTitle = document.createElement('h2');
+            let weekTitle = document.createElement('h3');
             weekTitle.textContent = `${week.week}`;
             weekListItem.appendChild(weekTitle);
 
