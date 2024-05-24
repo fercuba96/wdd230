@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    /* const baseURL = "https://fercuba96.github.io/wdd230/";*/
+    const baseURL = "https://fercuba96.github.io/wdd230/";
     const linksURL = "https://fercuba96.github.io/wdd230/data/links.json";
     const learnlink = document.querySelector('#learninglinks');
     async function getLinks() {
