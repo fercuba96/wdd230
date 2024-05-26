@@ -11,12 +11,12 @@ const displayCompanies = (per_companies) => {
         let companyinfo = document.createElement('section');
         let compName = document.createElement('h2');
         let portrait = document.createElement('img');
-        let dateofbirth = document.createElement('p');
-        let placeofbirth = document.createElement('ul');
+        let detailcomp = document.createElement('p');
+        let websitcomp = document.createElement('ul');
 
         compName.textContent = `${per_company.name}`;
-        dateofbirth.textContent = `Date of birth: ${per_company.birthdate}`;
-        placeofbirth.textContent = `Place of birth: ${per_company.birthplace}`;
+        detailcomp.textContent = `${per_company.address} - ph#: ${per_company.phone} - Membership: ${per_company.membership_level}`;
+        websitcomp.textContent = `${per_company.website}`;
 
         portrait.setAttribute('src', per_company.image);
         portrait.setAttribute('alt', `Portrait of ${per_company.name}`);
@@ -26,8 +26,8 @@ const displayCompanies = (per_companies) => {
 
         companyinfo.appendChild(compName);
         companyinfo.appendChild(portrait);
-        companyinfo.appendChild(dateofbirth);
-        companyinfo.appendChild(placeofbirth);
+        companyinfo.appendChild(detailcomp);
+        companyinfo.appendChild(websitcomp);
 
 
         companies.appendChild(companyinfo);
@@ -35,3 +35,22 @@ const displayCompanies = (per_companies) => {
 }
 
 getDirectoryData();
+
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector("article");
+
+// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
+
+gridbutton.addEventListener("click", () => {
+    // example using arrow function
+    display.classList.add("grid");
+    display.classList.remove("list");
+});
+
+listbutton.addEventListener("click", showList); // example using defined function
+
+function showList() {
+    display.classList.add("list");
+    display.classList.remove("grid");
+}
