@@ -60,31 +60,9 @@
         display: block;
         flex: 1 1 100%;
     }
-}
 
-/*
-
-@media (min-width: 700px) {
-    .companiesmain {
+    .list section {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
-    }
-
-    .menus {
-        grid-column: span 2;
-
+        grid-template-columns: 2fr 1fr 1fr;
     }
 }
-
-@media (max-width: 699px) {
-    .companiesmain {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .companiesmain section {
-        width: 100%;
-        margin-bottom: 1rem;
-    }
-}*/

@@ -22,7 +22,7 @@ const displayCompanies = (per_companies) => {
         portrait.setAttribute('alt', `Portrait of ${per_company.name}`);
         portrait.setAttribute('loading', 'lazy');
         portrait.setAttribute('width', '340');
-        portrait.setAttribute('height', '440');
+        portrait.setAttribute('height', '150');
 
         companyinfo.appendChild(compName);
         companyinfo.appendChild(portrait);

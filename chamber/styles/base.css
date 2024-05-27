@@ -496,9 +496,9 @@ textarea {
 
     margin: 0 auto;
     padding: 0.5rem;
-    max-width: 800px;
+    max-width: 830px;
     background-color: #fff;
-    font-family: Roboto, Helvetica, sans-serif;
+    font-family: Tahoma, sans-serif;
 }
 
 
@@ -506,7 +506,7 @@ textarea {
     margin: 1rem auto;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0.5rem;
-    background-color: #bed;
+    background-color: rgb(93, 163, 237);
     text-align: center;
 }
 
@@ -517,19 +517,21 @@ textarea {
 
 section {
     border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 3rem;
+    padding: 1.5rem;
     background-color: #eee;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0.4rem;
+    width: auto;
+    height: 400px;
 }
 
 section p {
     padding-bottom: 10px;
 }
 
-.grids {
+.grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 5px;
@@ -555,7 +557,7 @@ section p {
 }
 
 .grid h2 {
-    font-family: "Caveat", cursive;
+    font-family: Tahoma, sans-serif;
 }
 
 .list {
@@ -565,9 +567,10 @@ section p {
 
 .list section {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
     margin: 0;
     padding: 0.25rem;
+    height: 150px;
+    width: 100%;
 }
 
 .list section>* {
@@ -584,7 +587,7 @@ section p {
 }
 
 .list section:nth-child(even) {
-    background-color: #bed;
+    background-color: rgb(209, 243, 224);
 }
 
 section h2 {
@@ -605,7 +608,7 @@ section ul {
 }
 
 img {
-    height: 150px;
-    max-width: 400px;
-
+    height: auto;
+    max-width: 150px;
+    padding: 0.5rem;
 }
