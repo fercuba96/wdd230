@@ -496,14 +496,9 @@ textarea {
 
     margin: 0 auto;
     padding: 0.5rem;
-    max-width: 1200px;
+    max-width: 800px;
     background-color: #fff;
     font-family: Roboto, Helvetica, sans-serif;
-    position: relative;
-    /*
-    justify-content: center;
-    align-items: center;
-   */
 }
 
 
@@ -522,11 +517,17 @@ textarea {
 
 section {
     border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 0.5rem;
+    padding: 3rem;
     background-color: #eee;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.4rem;
 }
 
+section p {
+    padding-bottom: 10px;
+}
 
 .grids {
     display: grid;
@@ -537,9 +538,6 @@ section {
 
 .grid section {
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
 }
 
@@ -547,9 +545,9 @@ section {
     max-width: 300px;
 }
 
-.grid img {
-    border: 1px solid #fff;
-    box-shadow: 0 0 10px #333;
+.grid ul {
+    max-width: 200px;
+    padding-bottom: 10px;
 }
 
 .grid section>* {
@@ -607,7 +605,7 @@ section ul {
 }
 
 img {
-    height: 75px;
+    height: 150px;
     max-width: 400px;
 
 }

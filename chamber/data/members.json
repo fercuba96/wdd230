@@ -14,7 +14,7 @@
             "address": "Av. Circunvalación Norte 380, Trujillo",
             "phone": "+51 44 618500",
             "website": "https://www.cementospacasmayo.com.pe/",
-            "image": "cementos_pacasmayo_logo.png",
+            "image": "https://reqlut2.s3.amazonaws.com/uploads/logos/8d1a4d9e106323e83ec0f82376cfce97a8bd59ca-5242880.png",
             "membership_level": "Silver",
             "other_information": "One of the largest cement producers in Peru"
         },
@@ -23,7 +23,7 @@
             "address": "Av. Pedro de Osma 342, Barranco, Lima",
             "phone": "+51 1 213 9713",
             "website": "https://www.casa-andina.com/",
-            "image": "casa_andina_logo.png",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/4/48/Logo_Casa_Andina_Hoteles.png",
             "membership_level": "Platinum",
             "other_information": "Leading hotel chain in Peru offering comfortable accommodations"
         },
@@ -32,7 +32,7 @@
             "address": "Av. Argentina 4793, Callao",
             "phone": "+51 1 200 0300",
             "website": "https://www.gloria.com.pe/",
-            "image": "gloria_logo.png",
+            "image": "https://static.wikia.nocookie.net/logopedia/images/5/59/Gloria_1971.png/revision/latest?cb=20200729024423&path-prefix=es",
             "membership_level": "Bronze",
             "other_information": "One of the largest dairy companies in Peru"
         },
@@ -41,7 +41,7 @@
             "address": "Av. Santo Toribio 173, San Isidro, Lima",
             "phone": "+51 1 221 8888",
             "website": "https://www.gruporomero.pe/",
-            "image": "grupo_romero_logo.png",
+            "image": "https://reqlut2.s3.amazonaws.com/uploads/logosSocial/7c1f432a9c73077f515ce398ed2c2b7af3540122-5242880.png?v=58.2",
             "membership_level": "Gold",
             "other_information": "Diversified conglomerate with interests in various industries"
         },
@@ -50,7 +50,7 @@
             "address": "Av. Argentina 4793, Callao",
             "phone": "+51 1 200 0300",
             "website": "https://www.alicorp.com.pe/",
-            "image": "alicorp_logo.png",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Alicorp.svg/1280px-Alicorp.svg.png",
             "membership_level": "Silver",
             "other_information": "One of the largest consumer goods companies in Peru"
         },
@@ -59,7 +59,7 @@
             "address": "Av. Carlos Villarán 140, Surquillo, Lima",
             "phone": "+51 1 625 6555",
             "website": "https://www.interbank.pe/",
-            "image": "interbank_logo.png",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Interbank_logo.svg/1280px-Interbank_logo.svg.png",
             "membership_level": "Platinum",
             "other_information": "Leading banking institution in Peru"
         }
