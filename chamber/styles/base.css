@@ -125,7 +125,10 @@ nav a:hover {
     color: yellow;
 }
 
-main {
+
+.mainindex,
+.mainjoin,
+.maindiscover {
     font-family: 'Helvetica Neue', sans-serif;
     max-width: 800px;
     margin: 0 auto;
@@ -182,7 +185,7 @@ main {
 
 }
 
-img {
+.hover {
     width: 100%;
     background: #000;
     padding: 5px;
@@ -201,7 +204,7 @@ picture {
     background-color: #fff;
 }
 
-img {
+.hover {
     width: 100%;
     height: auto;
     margin: .5rem;
@@ -419,7 +422,7 @@ h3 {
     border-left: solid 8px green;
 }
 
-section h2 {
+.joinh2 {
     color: #011638;
     text-align: center;
     padding: 1.5rem;
@@ -493,13 +496,14 @@ textarea {
 
     margin: 0 auto;
     padding: 0.5rem;
-    max-width: 700px;
+    max-width: 1200px;
     background-color: #fff;
     font-family: Roboto, Helvetica, sans-serif;
-    display: flex;
+    position: relative;
+    /*
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+   */
 }
 
 
@@ -520,9 +524,11 @@ section {
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0.5rem;
     background-color: #eee;
+
 }
 
-.grid {
+
+.grids {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 5px;
@@ -531,6 +537,14 @@ section {
 
 .grid section {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.grid p {
+    max-width: 300px;
 }
 
 .grid img {
@@ -589,10 +603,11 @@ section ul {
     font-size: 0.85rem;
     color: navy;
     letter-spacing: 1.1pt;
+    max-width: 400px;
 }
 
 img {
     height: 75px;
-    max-width: 100%;
-    /* Images are jerks - Seattle*/
+    max-width: 400px;
+
 }
