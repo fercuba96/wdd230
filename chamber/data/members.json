@@ -24,7 +24,7 @@
             "phone": "+51 1 213 9713",
             "website": "https://www.casa-andina.com/",
             "image": "https://upload.wikimedia.org/wikipedia/commons/4/48/Logo_Casa_Andina_Hoteles.png",
-            "membership_level": "Platinum",
+            "membership_level": "Bronze",
             "other_information": "Leading hotel chain in Peru offering comfortable accommodations"
         },
         {
@@ -60,7 +60,7 @@
             "phone": "+51 1 625 6555",
             "website": "https://www.interbank.pe/",
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Interbank_logo.svg/1280px-Interbank_logo.svg.png",
-            "membership_level": "Platinum",
+            "membership_level": "Bronze",
             "other_information": "Leading banking institution in Peru"
         }
     ]
