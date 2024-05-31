@@ -34,20 +34,33 @@
         </ul>
     </nav>
     <main class="mainindex">
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/hero-image-small.webp">
+                <source media="(max-width: 960px)" srcset="images/hero-image-medium.webp">
+                <img src="images/hero-image-large.webp" alt="My favorite temple" loading="lazy" width="1279"
+                    height="853">
+            </picture>
+        </div>
         <div class="banner" data-component="dismissible-item" data-type="info"
             data-value="Meet and Greet on this Wednesday at 7:00 p.m"></div>
         <h1>Huachipa Chamber of Commerce</h1>
-
         <section class="card">
-            <h2>Hero image</h2>
-            <ul>
-                <li>Image<a href=""></a></li>
-            </ul>
-        </section>
-        <section class="card">
-            <h2>Join us</h2>
-            <ul>
-                <li>Call to action </li>
+            <ul class="calltoaction">
+                <h2>
+                    <span class="calltoaction-one">Get a</span>
+                    <span class="calltoaction-two">
+                        Chance
+                    </span>
+                </h2>
+                <p class="calltoaction-three">
+                    Dimension of reality that makes change possible and understandable. An indefinite and homogeneous
+                    environment in which natural events and human existence take place.
+                </p>
+                <div class="calltoaction-four">
+                    <a href="join.html" class="calltoaction-five">
+                        Get started
+                    </a>
             </ul>
         </section>
         <section class="card">
@@ -59,10 +72,10 @@
         <section class="card">
             <h2>Weather card section</h2>
             <ul>
-                <p class="temp-status">Temp: <span id="current-temp"></span></p>
+                <p class="temp-status">Today's Temp: <span id="current-temp"></span></p>
                 <figure>
-                    <img id="weather-icon" src="https://via.placeholder.com/150" alt="Weather icon">
                     <figcaption></figcaption>
+                    <img id="weather-icon" src="https://via.placeholder.com/150" alt="Weather icon">
                 </figure>
             </ul>
             <ul>
@@ -81,6 +94,7 @@
     </main>
     <footer>
         <p id="copyright"></p>
+        <p id="contactinfo"></p>
         <p id="projectinfo"></p>
         <p>Fernando Cuba - Lima, Peru</p>
         <p id="lastModified"></p>

@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (lastModifiedParagraph) {
         lastModifiedParagraph.textContent = "Last modified: " + lastModified;
     }
-
+    document.getElementById("contactinfo").textContent = "Chamber:  +51 934 163 838 / fercuba96@gmail.com";
 
     document.getElementById("projectinfo").textContent = "WDD230 Course project";
 

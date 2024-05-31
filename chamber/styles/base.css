@@ -80,6 +80,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
 
 }
 
@@ -125,7 +126,7 @@ nav a:hover {
 .mainjoin,
 .maindiscover {
     font-family: 'Helvetica Neue', sans-serif;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -602,7 +603,7 @@ section ul {
     max-width: 400px;
 }
 
-img {
+.companiesmain img {
     height: auto;
     max-width: 150px;
     padding: 0.5rem;
@@ -670,4 +671,65 @@ img {
 .dismissible-info button {
     background-color: #2196F3;
     color: #E3F2FD;
+}
+
+
+.hero {
+    margin: 10px auto;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, .1);
+    height: 300px;
+    grid-column: span 2;
+}
+
+.hero img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.calltoaction-one {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    color: whitesmoke;
+}
+
+.calltoaction-two {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    margin-top: 40px;
+    color: whitesmoke;
+}
+
+.calltoaction-three {
+    margin-top: 1.5rem;
+    font-weight: 150;
+    letter-spacing: 4;
+    padding: 0.8rem;
+}
+
+.calltoaction-four {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    background: #9932CC;
+    border: none;
+    border-radius: 8%;
+    border-bottom: 6px solid #ab55d6;
+    padding: 15px 15px 15px 15px;
+    text-align: center;
+}
+
+.calltoaction-four:hover {
+    margin-top: 30px;
+    background: #4EBAAF;
+    border-bottom: 6px solid #52CABF;
+    border-radius: 20%;
+    padding: 15px 15px 15px 15px;
+}
+
+.calltoaction-five {
+    font-size: 20px;
+    color: whitesmoke;
 }
