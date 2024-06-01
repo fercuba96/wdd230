@@ -24,26 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
         navigation.classList.toggle('open');
         hamButton.classList.toggle('open');
     });
-    /*
-        const lastVisitDateString = window.localStorage.getItem("lastVisitDate");
-        const lastVisitDate = lastVisitDateString ? new Date(lastVisitDateString) : new Date();
-    
-        const todaycount = new Date();
-        const daysDifference = Math.floor((todaycount - lastVisitDate) / (1000 * 60 * 60 * 24));
-    
-    
-        const visitsDisplay = document.querySelector(".visits");
-    
-        if (daysDifference < 1) {
-            visitsDisplay.textContent = `It is good to have your visit today!`;
-        } else if (daysDifference === 1) {
-            visitsDisplay.textContent = `You last visited 1 day ago.`;
-        } else {
-            visitsDisplay.textContent = `You last visited ${daysDifference} days ago.`;
-        }
-    
-        window.localStorage.setItem("lastVisitDate", todaycount.toISOString());
-    */
+
 
     const currentTemp = document.querySelector('#current-temp');
     const weatherIcon = document.querySelector('#weather-icon');
@@ -166,7 +147,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const website = document.createElement('a');
         website.href = company.website;
         website.target = '_blank';
-        website.textContent = 'Website';
+        website.textContent = `${company.website}`;
 
         const otherInfo = document.createElement('p');
         otherInfo.textContent = company.other_information;

@@ -9,11 +9,6 @@ body {
     padding: 0;
 }
 
-header img {
-    margin-bottom: 10px;
-    margin-right: 10px;
-}
-
 header span {
     font-size: 1.5em;
     font-weight: bold;
@@ -22,21 +17,23 @@ header span {
 header {
     font-family: Tahoma, sans-serif;
     text-align: center;
-    margin-bottom: 10px;
-    background-color: #B07156;
+    margin-bottom: 25px;
+    background-color: #d79578;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
     border: 1px solid rgba(0, 0, 0, 0.1);
+
 }
 
 nav {
     margin-bottom: 5px;
-    background-color: #9932CC;
+    background-color: #7d5292;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 900px;
     font-family: sans-serif;
+    border-radius: 8px;
 }
 
 nav a {
@@ -53,11 +50,14 @@ h1 {
     font-size: 2rem;
     margin-bottom: 10px;
     grid-column: span 2;
+    border-radius: 5px;
 }
 
 .card h2 {
     margin-bottom: 10px;
-    color: #669BBC
+    color: #71b3dd;
+    border-style: solid;
+    padding: 10px;
 }
 
 .card ul {
@@ -73,7 +73,7 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    background: #9932CC;
+    background: #7d5292;
     min-height: 100px;
     padding: 20px 50px;
     display: flex;
@@ -98,6 +98,9 @@ footer p {
     width: 100%;
     margin-bottom: 10px;
     background-color: #011638;
+    padding-top: 50px;
+    border-radius: 9px;
+
 }
 
 nav ul {
@@ -115,7 +118,9 @@ nav li {
 
 nav a:hover {
     text-decoration: overline;
+    border-radius: 7%
 }
+
 
 .active {
     color: yellow;
@@ -464,6 +469,10 @@ section li {
     padding: 10px;
 }
 
+.membership {
+    height: 620px;
+}
+
 .benefits {
     border: solid rgb(93, 163, 237);
     border-radius: 6px;
@@ -688,6 +697,12 @@ section ul {
     height: 100%;
 }
 
+.card div {
+    color: whitesmoke;
+    margin: auto;
+}
+
+
 .calltoaction-one {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
@@ -706,18 +721,16 @@ section ul {
 .calltoaction-three {
     margin-top: 1.5rem;
     font-weight: 150;
-    letter-spacing: 4;
     padding: 0.8rem;
 }
 
 .calltoaction-four {
     margin-top: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     background: #9932CC;
     border: none;
     border-radius: 8%;
     border-bottom: 6px solid #ab55d6;
-    padding: 15px 15px 15px 15px;
     text-align: center;
 }
 
@@ -732,4 +745,36 @@ section ul {
 .calltoaction-five {
     font-size: 20px;
     color: whitesmoke;
+}
+
+.card-spotlight {
+    height: auto;
+}
+
+.card-spotlight h3 {
+    width: 310px;
+    border-color: #333;
+    color: #011638;
+}
+
+.card-spotlight img {
+    display: none;
+}
+
+.card-spotlight div {
+    max-width: 350px;
+    height: auto;
+
+}
+
+.spotlight-title {
+    grid-column: span 2;
+    background-color: goldenrod;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.card-spotlight p {
+    padding: 0.2rem;
+    word-wrap: break-word;
 }

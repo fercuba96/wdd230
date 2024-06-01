@@ -34,6 +34,39 @@
         background-color: #ccc;
         font-size: 1rem;
     }
+
+    .card-spotlight {
+        grid-column: span 2;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 5px;
+    }
+
+
+    .card-spotlight h3 {
+        width: 350px;
+    }
+
+    .card-spotlight img {
+        width: 150px;
+        display: inline;
+    }
+
+    .card-spotlight div {
+        width: 350px;
+        height: 320px;
+
+    }
+
+    .mainindex h2 {
+        grid-column: span 2;
+    }
+
+    .calltoaction-four {
+
+        margin-bottom: 40px;
+        padding: 15px 15px 15px 15px;
+    }
 }
 
 @media (min-width: 768px) {
