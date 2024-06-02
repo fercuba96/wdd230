@@ -427,8 +427,7 @@ h3 {
     color: #011638;
     text-align: center;
     padding: 1.5rem;
-    border: solid beige;
-    border-radius: 6px;
+    border: solid #011638;
     background-color: rgb(202, 218, 223);
 }
 
@@ -437,8 +436,7 @@ section h3 {
     padding-top: 0.9rem;
     padding-bottom: 0%;
     padding-left: 1.5rem;
-    border: solid seagreen;
-    border-radius: 18px;
+    border-style: solid;
     padding: 10px;
     max-width: 400px;
     text-align: center;
