@@ -500,7 +500,10 @@ textarea {
 .thankyou {
     display: block;
     grid-column: span 2;
-
+    text-align: center;
+    padding: 100px;
+    background-color: #ffe9e9;
+    font-family: Arial, sans-serif
 }
 
 .companiesmain {
@@ -607,7 +610,7 @@ section h2 {
 
 section p {
     font-weight: 600;
-    font-size: smaller;
+    font-size: 14px;
 }
 
 section ul {
