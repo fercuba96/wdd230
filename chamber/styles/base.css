@@ -468,7 +468,7 @@ section li {
 }
 
 .membership {
-    height: 620px;
+    height: auto;
     border: 1px solid #ccc;
     background-color: #011638;
     border-radius: 9px;
