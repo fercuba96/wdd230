@@ -67,6 +67,11 @@
         margin-bottom: 40px;
         padding: 15px 15px 15px 15px;
     }
+
+    .calltoaction-two {
+        position: absolute;
+    }
+
 }
 
 @media (min-width: 768px) {
