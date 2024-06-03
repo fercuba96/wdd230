@@ -94,12 +94,13 @@ footer p {
 
 .card {
     border: 1px solid #ccc;
+    background-color: #011638;
+    border-radius: 9px;
     padding: 20px;
     width: 100%;
     margin-bottom: 10px;
-    background-color: #011638;
     padding-top: 50px;
-    border-radius: 9px;
+
 
 }
 
@@ -226,8 +227,7 @@ h3 {
     margin: 1rem;
     color: #F5F5DC;
     background-color: black;
-    border-color: #ccc;
-    border-style: double;
+    border: solid #71b3dd;
 }
 
 #calendar {
@@ -424,11 +424,11 @@ h3 {
 }
 
 .joinh2 {
-    color: #011638;
+    color: #71b3dd;
+    border: solid #71b3dd;
+    margin-bottom: 10px;
     text-align: center;
     padding: 1.5rem;
-    border: solid #011638;
-    background-color: rgb(202, 218, 223);
 }
 
 section h3 {
@@ -469,6 +469,14 @@ section li {
 
 .membership {
     height: 620px;
+    border: 1px solid #ccc;
+    background-color: #011638;
+    border-radius: 9px;
+}
+
+.membership p {
+    color: whitesmoke;
+    font-weight: 200;
 }
 
 .benefits {
