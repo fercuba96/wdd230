@@ -1,56 +1,85 @@
-const url = 'https://fercuba96.github.io/wdd230/chamber/data/members.json';
-const companies = document.querySelector('#directory');
-async function getDirectoryData() {
-    const response = await fetch(url);
-    const data = await response.json();
-    displayCompanies(data.peruvian_comp);
-}
+document.addEventListener("DOMContentLoaded", function () {
+    const currentYear = new Date().getFullYear();
 
-const displayCompanies = (per_companies) => {
-    per_companies.forEach((per_company) => {
-        let companyinfo = document.createElement('section');
-        let compName = document.createElement('h2');
-        let portrait = document.createElement('img');
-        let detailcomp = document.createElement('p');
-        let websitcomp = document.createElement('ul');
+    const copyrightYear = document.getElementById("copyright");
+    if (copyrightYear) {
+        copyrightYear.textContent = "© " + currentYear;
+    }
 
-        compName.textContent = `${per_company.name}`;
-        detailcomp.textContent = `${per_company.address} - ph#: ${per_company.phone} - Membership: ${per_company.membership_level}`;
-        websitcomp.textContent = `${per_company.website}`;
+    const lastModified = document.lastModified;
 
-        portrait.setAttribute('src', per_company.image);
-        portrait.setAttribute('alt', `Portrait of ${per_company.name}`);
-        portrait.setAttribute('loading', 'lazy');
-        portrait.setAttribute('width', '340');
-        portrait.setAttribute('height', '150');
+    const lastModifiedParagraph = document.getElementById("lastModified");
+    if (lastModifiedParagraph) {
+        lastModifiedParagraph.textContent = "Last modified: " + lastModified;
+    }
+    document.getElementById("contactinfo").textContent = "Chamber:  +51 934 163 838 / fercuba96@gmail.com";
 
-        companyinfo.appendChild(compName);
-        companyinfo.appendChild(portrait);
-        companyinfo.appendChild(detailcomp);
-        companyinfo.appendChild(websitcomp);
+    document.getElementById("projectinfo").textContent = "WDD230 Course project";
 
 
-        companies.appendChild(companyinfo);
+    const hamButton = document.querySelector('#menu');
+    const navigation = document.querySelector('.navigation');
+
+    hamButton.addEventListener('click', () => {
+        navigation.classList.toggle('open');
+        hamButton.classList.toggle('open');
     });
-}
 
-getDirectoryData();
 
-const gridbutton = document.querySelector("#grid");
-const listbutton = document.querySelector("#list");
-const display = document.querySelector("article");
+    const url = 'https://fercuba96.github.io/wdd230/chamber/data/members.json';
+    const companies = document.querySelector('#directory');
+    async function getDirectoryData() {
+        const response = await fetch(url);
+        const data = await response.json();
+        displayCompanies(data.peruvian_comp);
+    }
 
-// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
+    const displayCompanies = (per_companies) => {
+        per_companies.forEach((per_company) => {
+            let companyinfo = document.createElement('section');
+            let compName = document.createElement('h2');
+            let portrait = document.createElement('img');
+            let detailcomp = document.createElement('p');
+            let websitcomp = document.createElement('ul');
 
-gridbutton.addEventListener("click", () => {
-    // example using arrow function
-    display.classList.add("grid");
-    display.classList.remove("list");
+            compName.textContent = `${per_company.name}`;
+            detailcomp.textContent = `${per_company.address} - ph#: ${per_company.phone} - Membership: ${per_company.membership_level}`;
+            websitcomp.textContent = `${per_company.website}`;
+
+            portrait.setAttribute('src', per_company.image);
+            portrait.setAttribute('alt', `Portrait of ${per_company.name}`);
+            portrait.setAttribute('loading', 'lazy');
+            portrait.setAttribute('width', '340');
+            portrait.setAttribute('height', '150');
+
+            companyinfo.appendChild(compName);
+            companyinfo.appendChild(portrait);
+            companyinfo.appendChild(detailcomp);
+            companyinfo.appendChild(websitcomp);
+
+
+            companies.appendChild(companyinfo);
+        });
+    }
+
+    getDirectoryData();
+
+    const gridbutton = document.querySelector("#grid");
+    const listbutton = document.querySelector("#list");
+    const display = document.querySelector("article");
+
+    // The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
+
+    gridbutton.addEventListener("click", () => {
+        // example using arrow function
+        display.classList.add("grid");
+        display.classList.remove("list");
+    });
+
+    listbutton.addEventListener("click", showList); // example using defined function
+
+    function showList() {
+        display.classList.add("list");
+        display.classList.remove("grid");
+    }
 });
-
-listbutton.addEventListener("click", showList); // example using defined function
-
-function showList() {
-    display.classList.add("list");
-    display.classList.remove("grid");
-}
