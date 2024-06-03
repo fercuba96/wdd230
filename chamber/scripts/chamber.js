@@ -219,4 +219,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
     })(window)
 
+
+    const tomorrowSpan = document.getElementById('tomorrow');
+    const dayAfterTomorrowSpan = document.getElementById('day-Aftertomorrow');
+    const twodaysAfter = document.getElementById('two-Daysafter');
+
+    function getFutureDate(daysAhead) {
+        const today = new Date();
+        const futureDate = new Date(today);
+        futureDate.setDate(today.getDate() + daysAhead);
+
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        return futureDate.toLocaleDateString(undefined, options);
+    }
+
+    tomorrowSpan.textContent = getFutureDate(1);
+    dayAfterTomorrowSpan.textContent = getFutureDate(2);
+    twodaysAfter.textContent = getFutureDate(3);
 });
